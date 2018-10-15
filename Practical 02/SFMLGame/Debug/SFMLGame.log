@@ -1,7 +1,2 @@
-﻿  Character.cpp
-  Game.cpp
-  main.cpp
-  NPC.cpp
-  Player.cpp
-  Generating Code...
-  SFMLGame.vcxproj -> C:\Users\c00227505\Desktop\Practical 02\Debug\SFMLGame.exe
+﻿  Player.cpp
+  SFMLGame.vcxproj -> C:\Users\c00227505\Documents\GitHub\Practical-02-sfml\Practical 02\Debug\SFMLGame.exe

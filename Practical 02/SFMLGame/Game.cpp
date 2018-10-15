@@ -24,6 +24,17 @@ void Game::run()
 	{
 		update();
 		draw();
+		player->update();
+		npc->update();
+
+		if (player->playerSprite.getGlobalBounds().intersects(npc->NpcSprite.getGlobalBounds()) == true)
+		{
+			player->hit();
+		}
+		else
+		{
+			player->idle();
+		}
 	}
 }
 
@@ -35,8 +46,8 @@ void Game::update()
 		if (event.type == sf::Event::Closed)
 			window->close();
 
-		player->update();
-		npc->update();
+		//player->update();
+		//npc->update();
 	}
 
 }
@@ -45,8 +56,8 @@ void Game::draw()
 {
 	window->clear();
 	//window->draw(shape);
-	player->draw();
-	npc->draw();
+	player->draw(*window);
+	npc->draw(*window);
 	window->display();
 }
 
